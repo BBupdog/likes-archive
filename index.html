@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Likes Archive</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="top-bar">
+    <h1>Likes Archive</h1>
+    <div id="controls">
+      <input type="text" id="search" placeholder="Search..." />
+      <label id="import-btn">
+        Import Likes
+        <input type="file" id="file-input" accept=".js,.json" hidden />
+      </label>
+    </div>
+  </div>
+
+  <div id="gallery"></div>
+
+  <div id="lightbox" class="hidden">
+    <div id="lightbox-overlay"></div>
+    <div id="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <div id="lightbox-text"></div>
+      <div id="lightbox-actions">
+        <a id="lightbox-link" href="" target="_blank">Open tweet</a>
+        <button id="lightbox-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
